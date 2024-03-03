@@ -169,8 +169,10 @@ body {
         align-items: center;
         text-align: center;
     }
-    .home-image{
+    .home-image img{
         
+        max-height: 300px;
+        max-width: 300px;
             
     }
     .navbar{
