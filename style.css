@@ -65,6 +65,7 @@ body {
 }
 
 .home-content{
+    margin-top: 20px;
     max-width: 600px;
 }
 
@@ -94,7 +95,7 @@ body {
 .home-image img{
     max-width:450px;
     margin-right: -20px;
-    border-radius: 30%;
+    border-radius: 40%;
     border: 2px solid #0ef;
     box-shadow: 0 0 20px #0ef;
     
