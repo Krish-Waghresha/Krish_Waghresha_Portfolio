@@ -161,19 +161,17 @@ body {
     
     .left{
         display:flex;
-        justify-content: flex-start;
-    }
-    .home-image{
-        
-        max-width: 200px;
-        margin-top: 150px;
-        /* margin-right: -20px; */
+        justify-content: center;
     }
     .right{
         display:flex;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
+    .home-image{
+        
+            
     }
     .navbar{
         display:none;
