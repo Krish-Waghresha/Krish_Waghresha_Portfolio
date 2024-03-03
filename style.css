@@ -161,7 +161,7 @@ body {
     
     .left{
         display:flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .home-image{
         
