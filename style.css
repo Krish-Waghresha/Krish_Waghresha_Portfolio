@@ -63,12 +63,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 70px 10% 0;
-<<<<<<< HEAD
     margin-top:70px;
 
-=======
-    
->>>>>>> b7f6a0f825ab515d3a3f9b3b5765189974e9415b
 }
 
 .home-content{
@@ -161,7 +157,6 @@ body {
     }
     
 }
-<<<<<<< HEAD
 @media screen and (max-width: 960px) {
     
     .left{
@@ -187,5 +182,3 @@ body {
         
     }
   }
-=======
->>>>>>> b7f6a0f825ab515d3a3f9b3b5765189974e9415b
