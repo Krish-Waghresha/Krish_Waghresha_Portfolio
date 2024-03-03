@@ -167,7 +167,7 @@ body {
         
         max-width: 200px;
         margin-top: 150px;
-        margin-right: -20px;
+        /* margin-right: -20px; */
     }
     .right{
         display:flex;
