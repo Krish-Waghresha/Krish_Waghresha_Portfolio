@@ -94,10 +94,10 @@ body {
 .home-image img{
     max-width:450px;
     margin-right: -20px;
-    border-radius: 60%;
+    border-radius: 30%;
     border: 2px solid #0ef;
+    box-shadow: 0 0 20px #0ef;
     
-
 }
 
 .social-media a{
