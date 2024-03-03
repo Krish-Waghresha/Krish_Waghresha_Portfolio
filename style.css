@@ -182,4 +182,14 @@ body {
         margin-bottom: 100px;
         
     }
+    .home-content h3{
+        font-size: 24px;
+    }
+    .home-content h1{
+        font-size: 45px;
+        
+    }
+    .home-content p{
+        font-size:12px;
+    }
   }
