@@ -31,6 +31,7 @@ body {
 
 .logo{
     font-size:25px;
+    font-weight:700;
     color: #0ef;
     text-decoration: none;
     cursor: default;
