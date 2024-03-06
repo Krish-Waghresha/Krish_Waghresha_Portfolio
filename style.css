@@ -37,6 +37,8 @@ body {
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
+
+
 }
 
 .navbar a{
@@ -54,7 +56,7 @@ body {
     color:#0ef;
 }
 
-.home{
+.home,.about,.allSkills{
     position: relative;
     margin-top: 100px;
     width: 100%;
@@ -100,15 +102,18 @@ body {
     color:#0ef;
 }
 
+.home-image{
+    animation: imageSwirl 10s ease-in-out backwards;
+    animation-iteration-count: infinite;
+}
 .home-image img{
     max-width:450px;
     margin-right: -20px;
     border-radius: 40%;
     border: 2px solid #0ef;
     box-shadow: 0 0 40px #0ef;
-    
-}
 
+}
 .social-media a{
     display: inline-flex;
     justify-content: center;
@@ -154,8 +159,8 @@ body {
     color: #0ef;
     text-decoration: none;
     cursor: default;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
+    opacity: 1;
+    animation: slideRight 1s ease-in-out forwards;
     
 }
 
@@ -197,15 +202,36 @@ body {
     transform: translateY(-1rem);
 
 }
+
 @keyframes slideRight {
     0%{
         transform: translateX(-100px);
         opacity: 0;
         
+        
     }
     100%{
         transform: translateX(-30px);
         opacity: 1;
+
+    }
+    
+}
+
+@keyframes imageSwirl {
+    0%{
+        transform: rotateZ(3deg);
+       
+    }
+    50%{
+        transform: rotateZ(-3deg);
+        
+
+
+    }
+    100%{
+        transform: rotateZ(3deg);
+       
 
     }
     
@@ -225,7 +251,11 @@ body {
     
 }
 @media screen and (max-width: 960px) {
-    
+     #about,#skills,#home{
+        
+        margin-top:350px !important;  
+        margin-bottom:350px !important;  
+    }
     .left{
         display:flex;
         justify-content: center;

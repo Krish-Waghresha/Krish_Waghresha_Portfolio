@@ -6,7 +6,7 @@ let typed = new Typed(".multiple-text", {
     loop:true
 })
 
-let navbar = document.getElementsByClassName("navbar");  
+let navbar = document.querySelectorAll(".navbar a");  
 for (let i = 0; i < navbar.length; i++) {  
   navbar[i].addEventListener("click", function() {  
 
