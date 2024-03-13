@@ -30,14 +30,13 @@ body {
 }
 
 .logo{
-    font-size:25px;
-    font-weight:700;
-    color: #0ef;
-    text-decoration: none;
-    cursor: default;
+    font-size:25px !important;
+    font-weight:700 !important;
+    color: #0ef !important;
+    text-decoration: none !important;
+    cursor: default !important;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-
 
 }
 
@@ -67,6 +66,11 @@ body {
     padding: 70px 10% 0;
     margin-bottom:70px;
 
+}
+
+#hamburger-button{
+    font-size: 30px;
+    color:#0ef;
 }
 
 .home-content{
@@ -102,17 +106,14 @@ body {
     color:#0ef;
 }
 
-.home-image{
-    animation: imageSwirl 10s ease-in-out backwards;
-    animation-iteration-count: infinite;
-}
 .home-image img{
     max-width:450px;
     margin-right: -20px;
     border-radius: 40%;
     border: 2px solid #0ef;
     box-shadow: 0 0 40px #0ef;
-
+    animation: imageSwirl 10s ease-in-out forwards;
+    animation-iteration-count: infinite;
 }
 .social-media a{
     display: inline-flex;
@@ -153,7 +154,6 @@ body {
 }
 
 .pointers{
-    /* font-size:25px; */
     display: block;
     font-weight:700;
     color: #0ef;
@@ -219,20 +219,17 @@ body {
 }
 
 @keyframes imageSwirl {
+
     0%{
-        transform: rotateZ(3deg);
-       
+        box-shadow: 0 0 20px #0ef;
     }
+
     50%{
-        transform: rotateZ(-3deg);
-        
-
-
+        box-shadow: 0 0 80px #0ef;
     }
-    100%{
-        transform: rotateZ(3deg);
-       
 
+    100%{
+        box-shadow: 0 0 20px #0ef;
     }
     
 }
@@ -251,10 +248,13 @@ body {
     
 }
 @media screen and (max-width: 960px) {
-     #about,#skills,#home{
-        
-        margin-top:350px !important;  
-        margin-bottom:350px !important;  
+
+    .logo{
+        font-size:20px !important;
+    }
+    #about,#skills{
+        margin-top:400px !important;  
+        margin-bottom:400px !important;  
     }
     .left{
         display:flex;
@@ -271,15 +271,6 @@ body {
         max-height: 300px;
         max-width: 300px;
             
-    }
-    .navbar{
-        display:none;
-    }
-    .header{
-        display: flex;
-        justify-self: flex-start;
-        margin-bottom: 100px;
-        
     }
     .home-content h3{
         font-size: 20px;
