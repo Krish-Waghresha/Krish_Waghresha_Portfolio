@@ -255,7 +255,7 @@ section{
     .logo{
         font-size:20px !important;
     }
-    #about,#skills{
+    section{
         margin-top:400px !important;  
         margin-bottom:400px !important;  
     }
