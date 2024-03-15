@@ -187,10 +187,9 @@ section{
 .icons img:hover{
     transform: scale(1.5);
 }
-.skillDomain:hover{
+.skillDomain:hover, .card:hover{
     box-shadow: 0 0 50px #0ef;
     transform: translateY(-1rem);
-
 }
 
 .card{
@@ -198,14 +197,12 @@ section{
     border: 3px solid #0ef;
     border-radius: 10%;
     margin:2rem;
+    transition: all 0.6s ease-in-out;
 }
 .card-title{
     color:#0ef;
 }
 
-.interview{
-    height: 13rem;
-}
 @keyframes slideRight {
     0%{
         transform: translateX(-100px);
@@ -255,7 +252,7 @@ section{
     .logo{
         font-size:20px !important;
     }
-    section{
+    .about,.skills, .project{
         margin-top:400px !important;  
         margin-bottom:400px !important;  
     }
