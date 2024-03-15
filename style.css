@@ -160,7 +160,8 @@ section{
     padding:2.5 rem;
     margin: 2.5rem;
     border: 2px solid #0ef;
-    box-shadow: 0 0 40px #0ef;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #0ef;
     text-align: center;
     transition: all 0.5s ease-in-out;
 
@@ -198,11 +199,20 @@ section{
     border-radius: 10%;
     margin:2rem;
     transition: all 0.6s ease-in-out;
+    box-shadow: 0 0 10px #0ef;
+
+    
 }
-.card-title{
+.card-title,.interview-titles{
     color:#0ef;
+    font-weight:700;
 }
 
+
+
+.interview-main{
+    font-size: 1.2rem;
+}
 @keyframes slideRight {
     0%{
         transform: translateX(-100px);
