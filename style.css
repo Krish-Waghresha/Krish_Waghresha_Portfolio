@@ -292,12 +292,23 @@ margin-bottom: 20rem;
   .right-2::after {
     left: -14px;
   }
+
+  .exp-card{
+    width: 22rem;
+  }
   
   @media screen and (max-width: 600px) {
     .main-timeline-2::after {
       left: 31px;
+      
     }
   
+     .exp-card{
+        width: 18rem !important;;
+    }
+    .experience{
+        transform: translateX(-6rem);
+    }
     .timeline-2 {
       width: 100%;
       padding-left: 70px;
@@ -323,6 +334,8 @@ margin-bottom: 20rem;
     .right-2 {
       left: 0%;
     }
+     
+
 
   }
 
