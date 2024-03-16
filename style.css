@@ -303,10 +303,6 @@ margin-bottom: 20rem;
       
     }
   
-    .exp-img{
-        width:10rem;
-        height: 5rem;
-    }
      .exp-card{
         width: 18rem !important;;
     }
@@ -418,11 +414,11 @@ margin-bottom: 20rem;
         font-size:20px !important;
     }
     .about,.skills, .project{
-        margin-top:25rem !important;  
-        margin-bottom:25rem !important;  
+        margin-top:20rem !important;  
+        margin-bottom:20rem !important;  
     }
     .home{
-        margin-top: 10rem;
+        margin-top: 3rem;
     }
     #experience{
         margin-top:40rem !important;  
