@@ -414,11 +414,11 @@ margin-bottom: 20rem;
         font-size:20px !important;
     }
     .about,.skills, .project{
-        margin-top:18rem !important;  
-        margin-bottom:18rem !important;  
+        margin-top:20rem !important;  
+        margin-bottom:20rem !important;  
     }
     .home{
-        margin-top: 3rem;
+        margin-top: 9rem;
     }
     #experience{
         margin-top:40rem !important;  
