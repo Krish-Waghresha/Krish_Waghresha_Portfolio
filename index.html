@@ -1,205 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krish Waghresha</title>
+    <title>Krish Waghresha - Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
 
-
+    <!-- Header -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg ">
-            <a href="#" class="logo navbar-brand">Krish-Waghresha</a>
-             <!-- <span class=""></span> -->
-            <button  id="ham-out" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"><i id="hamburger-button" class='bx bx-menu-alt-left'></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#home">Home</a>
-                <a class="nav-item nav-link" href="#project">Projects</a>
-                <a class="nav-item nav-link" href="#experience">Experience</a>
-                <a class="nav-item nav-link" href="#skills">Skills</a>
-                <a class="nav-item nav-link" href="#about">About Me</a>
-              </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="#" class="logo">Krish<span>.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                </div>
             </div>
-          </nav>
-
-          
+        </nav>
     </header>
 
-    
+    <!-- Home -->
     <section class="home" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                
-                <div class="right col-xs-1 col-lg-6 order-2">
-                    <div class="home-content">
-                        <h3>Hello, It's Me</h3>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="home-content" data-aos="fade-right">
+                        <h3>Hello, I'm</h3>
                         <h1>Krish Waghresha</h1>
-                        <h3>And I'm a <span class="multiple-text"></span></h3>
-                        <p>I'm a big fan of all things tech! I love diving into new technologies and figuring out how they work. The way developers shape the internet is super interesting to me, and I'd love to be able to do the same someday. Even though I don't have much professional experience yet, I'm eager to team up with motivated companies and lend a hand with my skills. I believe in the power of collaboration and innovation to make a real difference in the world, and I'm excited to be a part of that journey! Whether it's coding, designing, or problem-solving, I'm always up for a challenge and ready to learn and grow along the way.</p>
-
+                        <h3>Software Developer at <span>IE4.AI Labs</span></h3>
+                        <div class="contact-info">
+                            <p><i class='bx bx-phone'></i> +91 9518355460</p>
+                            <p><i class='bx bx-envelope'></i> krishwaghresha@gmail.com</p>
+                        </div>
                         <div class="social-media">
-                            <a href="https://www.linkedin.com/in/krish-waghresha/"><i class="bx bxl-linkedin"></i></a>
-                            <a href="https://twitter.com/krishwaghresha7"><i class="bx bxl-twitter"></i></a>
-                            <a href="https://github.com/Krish-Waghresha"><i class="bx bxl-github"></i></a>
+                            <a href="https://linkedin.com/in/krish-waghresha" target="_blank">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="https://github.com/Krish-Waghresha" target="_blank">
+                                <i class='bx bxl-github'></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="left col-xs-1 col-lg-6 order-1">
-                    <div class="home-image">
-                        <img src="images/Krish.png">
+                <div class="col-md-6">
+                    <div class="home-img" data-aos="fade-left">
+                        <img src="images/Krish.png" alt="Profile">
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section class="project" id="project">
-        <div class="container-fluid">
-            <h1 class="pointers">Projects</h1><br>
-
-            <div class="card-deck d-flex justify-content-start">
-                <div class="row"> 
-        
-        <div class="card col-xs-1 col-lg-4" style="width: 18rem;">
-
-            <img class="card-img-top" src="images/hireme.png">
-            <div class="card-body">
-              <h5 class="card-title">HireMe</h5>
-              <p class="card-text mb-3">HireMe is a Java-based online job portal, simplifying job hunting and hiring.</p>
-              <a href="https://github.com/Krish-Waghresha/HireMe" class="btn btn-primary mt-2">Check out</a>
-            </div>
-          </div>
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top interview" src="images/interview.png">
-            <div class="card-body">
-              <h5 class="card-title">Interview-Prep</h5>
-              <p class="card-text">My interview prep website offers MCQs on C, Java, and OOPs. A go-to resource for interview preparation which comprises 100+ MCQS!</p>
-              <a href="interview-prep.html" class="btn btn-primary">Check out</a>
-            </div>
-          </div>
-
-          <div class="card col-xs-1 col-lg-4" style="width: 18rem;">
-            <img class="card-img-top" src="images/web-developer.svg">
-            <div class="card-body">
-              <h5 class="card-title">Personal Portfolio</h5>
-              <p class="card-text mb-5">My portfolio site built with HTML, CSS, and JavaScript is a colorful showcase of my projects and interests.</p>
-              <a href="#home" class="btn btn-primary mt-2">Check out</a>
-            </div>
-          </div>
-
-        </div>
-        </div>
-    </section>
-
-    <section id="experience" class="m-5">
+    <!-- Experience -->
+    <section class="experience" id="experience">
         <div class="container">
-            <h1 class="pointers">Experience</h1><br>
-
-            <div class="experience">
-          <div class="main-timeline-2">
-            <div class="timeline-2 left-2 ">
-                <div class="card exp-card col-xs-1 col-lg-4">
-                    <img class="exp-img card-img-top" src="images/GDSC_LOGOG.png">
-                    <div class="card-body">
-                      <h5 class="card-title">GDSC Lead at PVG's College of Science</h5>
-                      <p class="text-muted">June 2023-Present</p>
-                      <p class="card-text mb-5">As the club leader, I organize tech events, workshops, and activities, collaborate with speakers and sponsors, motivate members, and provide guidance to foster a vibrant tech community on campus.   </p>
+            <h2 class="section-title" data-aos="fade-up">Experience</h2>
+            <div class="timeline">
+                <!-- Software Developer -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <h4>IE4.AI Labs (Turiance.AI)</h4>
+                        <p class="date">June 2024 - Present</p>
+                        <ul>
+                            <li>Developed and maintained features in .NET and Angular</li>
+                            <li>Implemented infrastructure solutions with Azure AD, Kubernetes</li>
+                            <li>Optimized application performance using Docker and Redis</li>
+                        </ul>
                     </div>
-                  </div>
-            </div>
-            <div class="timeline-2 right-2 exp-card">
-                <div class="future card  exp-card col-xs-1 col-lg-4">
-                    <div class="card-body">
-                      <h5 class="card-title">Tech Junkie on the Hunt for an Adventure in Innovation!</h5>
-                      <p class="text-muted">Future plans</p>
-                      <p class="card-text mb-5">As a passionate tech enthusiast and recent graduate actively seeking employment, I am eager to join an organization where I can continuously develop my technical skills and contribute to meaningful projects.   </p>
+                </div>
+
+                <!-- Teaching Assistant -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h3>Teaching Assistant</h3>
+                        <h4>NSG Academy</h4>
+                        <p class="date">June 2022 - May 2024</p>
+                        <ul>
+                            <li>Assisted students in C and PostgreSQL</li>
+                            <li>Provided code reviews and debugging support</li>
+                            <li>Assessed student progress</li>
+                        </ul>
                     </div>
-                  </div>
+                </div>
+
+                <!-- GDSC Lead -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h3>Google Developer Student Clubs Lead</h3>
+                        <h4>PVG's College of Science</h4>
+                        <p class="date">June 2023 - May 2024</p>
+                        <ul>
+                            <li>Led GDSC initiatives and workshops</li>
+                            <li>Organized tech exploration events</li>
+                            <li>Managed student developer team</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Clearfix div -->
+                <div class="clearfix"></div>
             </div>
-    </div>
-</div>
-</div>
-</section>
+        </div>
+    </section>
 
-
-    <section id="skills" class="skills">
-        <div class="container-fluid">
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
             <div class="row">
-                <h1 class="pointers">Skills</h1><br>
-                <div class="col-xs-1 col-md-6 col-lg-4 front-end skillDomain">
-                    <div class="icons">
-                        <img src="images/html_logo.png" alt="">
-                        <img src="images/css_logo.png" alt="">
-                        <img src="images/js_logo.png" alt="">
+                <!-- HireMe -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="images/hireme.png" alt="HireMe">
+                        <div class="project-info">
+                            <h3>HireMe</h3>
+                            <p>Online Job Portal with Java & PostgreSQL</p>
+                            <div class="tech-stack">
+                                <span>Java</span>
+                                <span>PostgreSQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="links">
+                                <a href="https://github.com/Krish-Waghresha/HireMe" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="title">FrontEnd</div>
                 </div>
-                <div class="col-xs-1 col-md-6 col-lg-4 back-end skillDomain">
-                    <div class="icons">
-                        <img src="images/java_logo.png" alt="">
-                        <img src="images/php_logo.png" alt="">
-                        <img src="images/node_logo.png" alt="">
-                        <img src="images/python_logo.png" alt="">
+                <!-- Interview Prep -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="images/interview.png" alt="Interview Prep">
+                        <div class="project-info">
+                            <h3>Interview Prep</h3>
+                            <p>MCQ Platform for Technical Interviews</p>
+                            <div class="tech-stack">
+                                <span>Java</span>
+                                <span>PostgreSQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="links">
+                                <a href="https://github.com/Krish-Waghresha/InterviewPrep" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a>
+                                <a href="interview-prep.html" target="_blank">
+                                    <i class='bx bx-link-external'></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="title">BackEnd</div>
-                </div>
-                <div class="col-xs-1 col-lg-4 Database skillDomain">
-                    <div class="icons">
-                        <img src="images/psql_logo.png" alt="">
-                        <img src="images/mongo_logo.png" alt="">
-                        <img src="images/mysql_logo.png" alt="">
-                    </div>
-                    <div class="title">Database</div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="about" id="about">
-        <div class="container-fluid">
-            <h1 class="pointers">About Me</h1>
-            <p>
-                <br>
-                <b>👋 Hey there!</b> I'm Krish Waghresha, a tech enthusiast hailing from Pune, India. Currently on the final stretch of my Computer Science degree journey!
-                <br><br>
-                
-                <b>🚀 What I'm Up To?</b> I've been knee-deep in coding adventures with languages like C, Java, and Python. You know, building software, tweaking things to make them run smoother, and even dabbling in setting up networks.
-                <br><br>
 
-                <b>💡 My Passion?</b> When I'm not buried in textbooks, I'm tinkering with projects that challenge me and expand my skills. I'm all about embracing the learning journey and soaking up new tech knowledge.
-                <br><br>
-                
-                <b> 📧 Let's Connect!</b>
-                Got something tech-related on your mind or just fancy a chat? Drop me a line at krishwaghresha@gmail.com or connect with me on LinkedIn. Let's geek out together!
-                <br><br>
-                Thanks for swinging by! Excited to connect and explore the endless possibilities in the tech world.
-            </p>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="images/skills/angular.png" alt="Angular">
+                            <span>Angular</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/js_logo.png" alt="Angular">
+                            <span>JSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/css_logo.png" alt="Angular">
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/html_logo.png" alt="Angular">
+                            <span>HTML</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="images/skills/dotnet.png" alt=".NET">
+                            <span>.NET</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/java_logo.png" alt=".NET">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/skills/python_logo.png" alt=".NET">
+                            <span>Python</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-        
     </section>
 
-    
-    
-    
+   <!-- Education Section -->
+<section class="education" id="education">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Education</h2>
+        <div class="education-grid">
+            <!-- B.Sc -->
+            <div class="education-card" data-aos="fade-up">
+                <div class="education-content">
+                    <h3>B.Sc in Computer Science</h3>
+                    <p class="institution">Savitribai Phule Pune University</p>
+                    <p class="year">2021 - 2024</p>
+                    <div class="grade">
+                        <span class="grade-label">CGPA:</span>
+                        <span class="grade-value">9.19</span>
+                    </div>
+                </div>
+            </div>
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+            <!-- HSC -->
+            <div class="education-card" data-aos="fade-up">
+                <div class="education-content">
+                    <h3>Higher Secondary Certificate</h3>
+                    <p class="institution">Maharashtra State Board</p>
+                    <p class="year">2020 - 2021</p>
+                    <div class="grade">
+                        <span class="grade-label">Percentage:</span>
+                        <span class="grade-value">84.20%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SSC -->
+            <div class="education-card" data-aos="fade-up">
+                <div class="education-content">
+                    <h3>Secondary School Certificate</h3>
+                    <p class="institution">Maharashtra State Board</p>
+                    <p class="year">2018 - 2019</p>
+                    <div class="grade">
+                        <span class="grade-label">Percentage:</span>
+                        <span class="grade-value">81.80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
