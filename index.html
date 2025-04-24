@@ -2,37 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Krish Waghresha - Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Add favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Theme color for browser -->
+    <meta name="theme-color" content="#1f242d">
 </head>
 <body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader"></div>
+            <h2>Loading<span class="dots">...</span></h2>
+        </div>
+    </div>
+
     <!-- Particle Background -->
-    <div id="particles-js"></div>
+    <div id="particles-js" style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;"></div>
 
     <!-- Header -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
                 <a href="#" class="logo">Krish<span>.</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <i class='bx bx-menu'></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#home" class="nav-link active"><i class='bx bx-home-alt'></i> Home</a></li>
+                        <li><a href="#experience" class="nav-link"><i class='bx bx-briefcase'></i> Experience</a></li>
+                        <li><a href="#projects" class="nav-link"><i class='bx bx-code-alt'></i> Projects</a></li>
+                        <li><a href="#skills" class="nav-link"><i class='bx bx-server'></i> Skills</a></li>
+                        <li><a href="#education" class="nav-link"><i class='bx bx-book'></i> Education</a></li>
+                        <li><a href="#achievements" class="nav-link"><i class='bx bx-trophy'></i> Achievements</a></li>
                     </ul>
+                    <button class="navbar-close d-lg-none">
+                        <i class='bx bx-x'></i>
+                    </button>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <!-- Home -->
@@ -41,27 +56,43 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="home-content" data-aos="fade-right">
-                        <h3>Hello, I'm</h3>
-                        <h1>Krish Waghresha</h1>
-                        <h3>Full Stack Developer at <span>IE4.AI Labs</span></h3>
-                        <p class="summary">Full Stack Developer with hands-on experience in .NET, Angular, Python, and cloud technologies. I specialize in building and deploying AI-powered systems. I'm passionate about combining software engineering and AI to build smart, impactful solutions.</p>
+                        <div class="subtitle">Hello, I'm</div>
+                        <h1 class="glitch-text">Krish Waghresha</h1>
+                        <div class="text-animate">
+                            <h3>I'm a <span class="text-rotate" data-period="2000" data-rotate='[ "Full Stack Developer", "Tech Enthusiast", "Problem Solver" ]'></span></h3>
+                        </div>
+                        <p class="summary glass-effect">Full Stack Developer with hands-on experience in .NET, Angular, Python, and cloud technologies. I specialize in building and deploying AI-powered systems. I'm passionate about combining software engineering and AI to build smart, impactful solutions.</p>
                         <div class="contact-info">
-                            <p><i class='bx bx-phone'></i> +91 9518355460</p>
-                            <p><i class='bx bx-envelope'></i> krishwaghresha@gmail.com</p>
+                            <p><i class='bx bx-phone pulse'></i> +91 9518355460</p>
+                            <p><i class='bx bx-envelope pulse'></i> krishwaghresha@gmail.com</p>
                         </div>
                         <div class="social-media">
-                            <a href="https://linkedin.com/in/krish-waghresha" target="_blank">
+                            <a href="https://linkedin.com/in/krish-waghresha" target="_blank" title="LinkedIn">
                                 <i class='bx bxl-linkedin'></i>
                             </a>
-                            <a href="https://github.com/Krish-Waghresha" target="_blank">
+                            <a href="https://github.com/Krish-Waghresha" target="_blank" title="GitHub">
                                 <i class='bx bxl-github'></i>
                             </a>
+                            <a href="mailto:krishwaghresha@gmail.com" title="Email">
+                                <i class='bx bx-envelope'></i>
+                            </a>
+                        </div>
+                        <div class="cta-buttons">
+                            <a href="#projects" class="btn primary-btn">View Projects</a>
+                            <a href="#contact" class="btn secondary-btn">Contact Me</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="home-img" data-aos="fade-left">
-                        <img src="images/Krish.png" alt="Profile">
+                        <div class="img-box">
+                            <img src="images/Krish.png" alt="Profile" style="width: 90%; height: 90%; object-fit: cover; object-position: center top; border: 4px solid #0ef; padding: 5px; background-color: rgba(31, 36, 45, 0.3);">
+                            <div class="img-bg"></div>
+                            <div class="box-animate">
+                                <div></div><div></div><div></div><div></div><div></div>
+                                <div></div><div></div><div></div><div></div><div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -322,6 +353,64 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Test if particles.js is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, checking particles.js');
+            if (typeof particlesJS !== 'undefined') {
+                console.log('Particles.js is available');
+                // Configure particles with very visible settings for testing
+                particlesJS('particles-js', {
+                    particles: {
+                        number: { value: 80 },
+                        color: { value: '#ff0000' },
+                        shape: { type: 'circle' },
+                        opacity: { value: 0.8 },
+                        size: { value: 10 },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: '#ff0000',
+                            opacity: 0.8,
+                            width: 2
+                        },
+                        move: { enable: true, speed: 5 }
+                    }
+                });
+            } else {
+                console.error('Particles.js is NOT available');
+                alert('Particles.js library is not loaded properly');
+            }
+        });
+    </script>
     <script src="script.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <div class="footer-info">
+                            <a href="#" class="footer-logo">Krish<span>.</span></a>
+                            <p>Full Stack Developer with expertise in building AI-powered applications and scalable solutions.</p>
+                            <div class="contact-info-footer">
+                                <p><i class='bx bx-phone'></i> +91 9518355460</p>
+                                <p><i class='bx bx-envelope'></i> krishwaghresha@gmail.com</p>
+                            </div>
+                            <div class="social-media-footer">
+                                <a href="https://linkedin.com/in/krish-waghresha" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                                <a href="https://github.com/Krish-Waghresha" target="_blank"><i class='bx bxl-github'></i></a>
+                                <a href="mailto:krishwaghresha@gmail.com"><i class='bx bx-envelope'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Krish Waghresha. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
